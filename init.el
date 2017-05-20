@@ -285,3 +285,12 @@
     (yaml-mode smart-shift web-mode jinja2-mode magit xcscope sphinx-doc hydra elpy counsel)))
  '(show-paren-mode t)
  '(tool-bar-mode nil))
+
+
+;; Use Droid Sans Mono as the default font on osx
+(cond ((eq system-type 'darwin)
+       (set-default-font
+	"Droid Sans Mono:pixelsize=9:weight=normal:slant=normal:width=normal:spacing=100:scalable=true")
+       ))
+
+
